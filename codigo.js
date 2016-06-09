@@ -65,7 +65,17 @@ function inicio () {
 	ladron.ladron = new Image();
 	ladron.ladron.src = ladron.imagenURL;
 	ladron.ladron.onload = confirmarLadron;
-
-
 	
+	var resultados = document.getElementById("resultados");
+	resultados.addEventListener("click", verificar);
+}
+
+function verificar () {
+	if(document.preguntas.R1[1].checked){
+	alert("Si sigues cantando vas a salir pronto"); 
+	}
+	else {
+		alert("Jajaja, ¿es enserio?, no intentes engañarme, se que no es verdad")
+	}
+
 }
